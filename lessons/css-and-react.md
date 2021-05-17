@@ -35,6 +35,16 @@ module.exports = {
 };
 ```
 
+Now, make a `.postcssrc` file in the project root directory. 
+
+```json
+{
+  "plugins": {
+    "autoprefixer": {},
+    "tailwindcss": {}
+  }
+}
+
 Lastly, let's go modify our `style.css` file.
 
 ```css
@@ -42,6 +52,8 @@ Lastly, let's go modify our `style.css` file.
 @tailwind components;
 @tailwind utilities;
 ```
+
+
 
 > If you're seeing Visual Studio Code give you a warning about unknown at rules in your style.css and it bothers you, open settings, search for `css.lint.unknownAtRules` and set that to ignore.
 
